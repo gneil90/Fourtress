@@ -1,0 +1,18 @@
+/* 
+  Localizable.string.strings
+  NestSDK
+
+  Created by Nail Galiaskarov on 12/12/17.
+  Copyright © 2017 Nest. All rights reserved.
+*/
+
+///MARK: AuthenticationViewController strings
+
+"Cancel" = "Отменить";
+"Authorize" = "Войти";
+"OK" = "Хорошо";
+"Enter PIN" = "Введите PIN";
+"Enter the PIN code you see on the page" = "Введите PIN, который видите на странице";
+"PIN code must be non-empty value" = "PIN код не может быть пустым";
+"Error" = "Ошибка";
+"Please, try again later" = "Пожалуйста, попробуйте еще раз";

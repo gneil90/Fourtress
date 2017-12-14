@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="NTStructure" representedClassName="NTStructure" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="structureId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="structure_id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="thermostats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NTThermostat" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="deviceId"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="relatedByAttribute" value="structureId"/>
+        </userInfo>
+    </entity>
+    <entity name="NTThermostat" representedClassName="NTThermostat" syncable="YES">
+        <attribute name="ambientTemperatureC" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="ambient_temperature_c"/>
+            </userInfo>
+        </attribute>
+        <attribute name="deviceId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="device_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="humidity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameLong" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name_long"/>
+            </userInfo>
+        </attribute>
+        <attribute name="structureId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="structure_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="targetTemperatureC" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="target_temperature_c"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="relatedByAttribute" value="deviceId"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="NTStructure" positionX="0" positionY="45" width="128" height="90"/>
+        <element name="NTThermostat" positionX="-171" positionY="45" width="128" height="150"/>
+    </elements>
+</model>
